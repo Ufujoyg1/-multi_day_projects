@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+ 
+    <h1>Mad Libs Story 1</h1>
+     
+    <ul>
+       <li>Adjective: <input type="text" id="adjective"></li>
+      <li>General Place: <input type="text" id="place"></li>
+      <li>Vehicle <input type="text" id="vehicle"></li>
+      <li>Name of Game: <input type="text" id="game"></li>
+      <li>Plural Noun: <input type="text" id="">pluralnoun</li>
+      <li>Ing Verb: <input type="text" id="ingverb"></li>
+      <li>Ing Verb 2: <input type="text" id="ingverb2"></li>
+    <li>Plural Food: <input type="text" id="foods"></li>
+   <li>Favorite Sport: <input type="text" id="sport"></li>
+   <li>Ing Verb 3: <input type="text" id="ingverb3"></li>
+   <li>Emotion: <input type="text" id="emotion"></li><li>Number: <input type="text" id="number"></li>
+    </ul>
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+ 
+    <script>
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+    var adjectiveEl = document.getElementById("adjective")
+    var placeEl = document.getElementById("place")var vehicleEl = document.getElementById("vehicle")
+var gameEl = document.getElementById("name of game")
+    var pluralnounEl = document.getElementById("plural noun")
+    var ingverbEl = document.getElementById("ing verb")
+    var ingverb2El = document.getElementById("ing verb 2")
+    var foodsEl = document.getElementById("plural food")
+    var sportEl = document.getElementById("sport")
+    var ingverb3El = document.getElementById("ing verb 3")
+   var emotionEl = document.getElementById("emotion")   var numberEl = document.getElementById("number")
+            
+            storyDiv.innerHTML = ("A vacation is when you take a trip to some" + adjectiveEl.value + "place near an amazing" + placeEl.value + ". A good vacation place is one where you can ride" + vehicleEl.value + "or play" + gameEl.value + "or go hunting for" + pluralnounEl.value + " I like to spend my time" + ingverbEl.value + "or" + ingverb2El.value + ". When parents go on a vacation, they spend their time eating three" + foodsEl.value + "a day. Usually, fathers play" + sportEl.value + ", and mothers spend their time" + ingverb3El.value + ". Adults need vacations more than kids because adults are always very" + emotionEl.value + "because they have to work" + numberEl.value + "hours every day all year just to afford their vacations" );
+        };
+        libButton.addEventListener('click', libIt);
+        
+    </script>
+  
+ </body>
+</html>
